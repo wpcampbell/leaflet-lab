@@ -1,5 +1,6 @@
 /*Stylesheet by Will P. Campbell,2021*/
 
+//tutorial 1
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -39,3 +40,19 @@ function onMapClick(e) {
 }
 
 mymap.on('click', onMapClick);
+
+//tutorial 2
+
+var geojsonFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Coors Field",
+        "amenity": "Baseball Stadium",
+        "popupContent": "This is where the Rockies play!"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-104.99404, 39.75621]
+    }
+};
+
