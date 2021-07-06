@@ -1,2 +1,9 @@
 /*Stylesheet by Will P. Campbell,2021*/
-#mapid {height: 180px;}
+#mapid {height: 450px; 
+        width:450px ;
+        border:5px solid black;
+	    border-radius: 1px;}
+
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
