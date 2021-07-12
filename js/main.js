@@ -9,3 +9,4 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x
     maxZoom: 18,
     ext: 'png'
 }).addTo(mymap);
+
