@@ -2,9 +2,16 @@
 #mapid {height: 450px; 
         width:450px ;
         border:5px solid black;
-	    border-radius: 1px;}
+	    border-radius: 1px;
+        display: inline-block;}
 
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#panel {
+    width: 16%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
