@@ -1,8 +1,9 @@
 /*Stylesheet by Will P. Campbell,2021*/
-#mapid {height: 450px; 
-        width:450px ;
+#mapid {height: 650px; 
+        width:80%;
         border:5px solid black;
 	    border-radius: 1px;
+        display: inline-block;
       }
 
 h1{
@@ -10,3 +11,20 @@ h1{
 }
 
 
+#panel {
+    width: 16%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.yearCount{
+    font-size:whatever;
+    font-weight:bold;
+  }
+  .yearText{
+    font-size:something else;
+    font-style:italic;
+    color:#dedede;
+  }
