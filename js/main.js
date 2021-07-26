@@ -25,7 +25,7 @@ var g11000 = L.geoJSON(Toe_11000,
 
 g11000.on({
     click: function(){
-        $("#panel").html(Toe_11000.features[0].properties.Years_Ago+ " <b>Years Ago</b>");
+        $("#panel").html(Toe_11000.features[0].properties.Years_Ago  +" <b>Years Ago</b>");
     }
 });
 

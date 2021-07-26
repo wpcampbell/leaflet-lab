@@ -19,12 +19,10 @@ h1{
 
 }
 
-.yearCount{
-    font-size:whatever;
-    font-weight:bold;
-  }
-  .yearText{
-    font-size:something else;
-    font-style:italic;
-    color:#dedede;
-  }
+#panel2 {
+  width: 16%;
+  padding: 20px;
+  display: inline-block;
+  vertical-align:auto
+
+}
