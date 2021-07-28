@@ -1,6 +1,6 @@
 /*Stylesheet by Will P. Campbell,2021*/
 
-var map = L.map('mapid').setView([44.5,-90], 6.5);
+var map = L.map('mapid').setView([45.5,-89.5], 7);
 
 var baseMap=L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.{ext}', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -25,7 +25,7 @@ var g11000 = L.geoJSON(Toe_11000,
 
 g11000.on({
     click: function(){
-        $("#panel").html(Toe_11000.features[0].properties.Years_Ago  +" <b>Years Ago</b>");
+        $("#panel").html(Toe_11000.features[0].properties.Years_Ago  +" Years Ago");
     }
 });
 
@@ -41,7 +41,7 @@ var g14600 = L.geoJSON(Toe_14600, {
 
 g14600.on({
     click: function(){
-        $("#panel").html(Toe_14600.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_14600.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -58,7 +58,7 @@ var g17000 = L.geoJSON(Toe_17000,
 
 g17000.on({
     click: function(){
-        $("#panel").html(Toe_17000.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_17000.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -75,7 +75,7 @@ var g20500 = L.geoJSON(Toe_20500,
 
 g20500.on({
     click: function(){
-        $("#panel").html(Toe_20500.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_20500.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -93,7 +93,7 @@ var g24000 = L.geoJSON(Toe_24000,
 
 g24000.on({
     click: function(){
-        $("#panel").html(Toe_24000.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_24000.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -111,7 +111,7 @@ var g27500 = L.geoJSON(Toe_27500,
 
 g27500.on({
     click: function(){
-        $("#panel").html(Toe_27500.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_27500.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -128,7 +128,7 @@ var g31500 = L.geoJSON(Toe_31500,
 
 g31500.on({
     click: function(){
-        $("#panel").html(Toe_31500.features[0].properties.Years_Ago +" <b>Years Ago</b>");
+        $("#panel").html(Toe_31500.features[0].properties.Years_Ago +" Years Ago");
     }
 });
 
@@ -144,4 +144,6 @@ var overlayMaps = {
 }; 
 
 var glacierLayers = L.control.layers(null,overlayMaps).addTo(map);
+
+var popup = L.popup();
 
