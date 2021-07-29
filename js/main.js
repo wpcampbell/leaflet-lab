@@ -19,13 +19,13 @@ var Toe_11000 = {"type":"FeatureCollection", "features": [
 
 var g11000 = L.geoJSON(Toe_11000, 
     {
-    style:  {color:"#ff7800"}
+    style:  {color:"#e41a1c"}
         }
 );
 
 g11000.on({
     click: function(){
-        $("#panel").html(Toe_11000.features[0].properties.Years_Ago  +" Years Ago");
+        $("#panel").html(Toe_11000.features[0].properties.Years_Ago  +" Years Ago" + info11000 + glacierInfo + selfPlug);
     }
 });
 
@@ -35,13 +35,13 @@ var Toe_14600 = {"type":"FeatureCollection", "features": [
     ]}
 
 var g14600 = L.geoJSON(Toe_14600, {
-    style: {color:"#40e0d0"}
+    style: {color:"blue"}
         }
 );
 
 g14600.on({
     click: function(){
-        $("#panel").html(Toe_14600.features[0].properties.Years_Ago +" Years Ago");
+        $("#panel").html(Toe_14600.features[0].properties.Years_Ago +" Years Ago" + info14600 + glacierInfo + selfPlug);
     }
 });
 
@@ -52,13 +52,13 @@ var Toe_17000 = {"type":"FeatureCollection", "features": [
 
 var g17000 = L.geoJSON(Toe_17000,
     {
-    style:  {color:"#dd4ce6"}
+    style:  {color:"#4daf4a"}
         }
 );
 
 g17000.on({
     click: function(){
-        $("#panel").html(Toe_17000.features[0].properties.Years_Ago +" Years Ago");
+        $("#panel").html(Toe_17000.features[0].properties.Years_Ago +" Years Ago" + info17000 + glacierInfo + selfPlug);
     }
 });
 
@@ -69,13 +69,13 @@ var Toe_20500 = {"type":"FeatureCollection", "features": [
 
 var g20500 = L.geoJSON(Toe_20500, 
     {
-    style:  {color:"#419ead"}
+    style:  {color:"#ffff33"}
         }  
 );
 
 g20500.on({
     click: function(){
-        $("#panel").html(Toe_20500.features[0].properties.Years_Ago +" Years Ago");
+        $("#panel").html(Toe_20500.features[0].properties.Years_Ago +" Years Ago" + info20500 + glacierInfo + selfPlug);
     }
 });
 
@@ -86,14 +86,14 @@ var Toe_24000 = {"type":"FeatureCollection", "features": [
 
 var g24000 = L.geoJSON(Toe_24000, 
     {
-    style:  {color:"#85f6ca"}
+    style:  {color:"#984ea3"}
         }
     
 );
 
 g24000.on({
     click: function(){
-        $("#panel").html(Toe_24000.features[0].properties.Years_Ago +" Years Ago");
+        $("#panel").html(Toe_24000.features[0].properties.Years_Ago +" Years Ago" + info24000 + glacierInfo + selfPlug);
     }
 });
 
@@ -104,14 +104,14 @@ var Toe_27500 = {"type":"FeatureCollection", "features": [
 
 var g27500 = L.geoJSON(Toe_27500, 
     {
-    style:  {color:"#e4fc83"}
+    style:  {color:"#ff7f00"}
         }
     
 );
 
 g27500.on({
     click: function(){
-        $("#panel").html(Toe_27500.features[0].properties.Years_Ago +" Years Ago");
+        $("#panel").html(Toe_27500.features[0].properties.Years_Ago +" Years Ago"+ info27500 + glacierInfo + selfPlug);
     }
 });
 
@@ -122,13 +122,14 @@ var Toe_31500= {"type":"FeatureCollection", "features": [
   
 var g31500 = L.geoJSON(Toe_31500,
      {
-        style:{color:"#419ead"}
+        style:{color:"#a65628"}
     }
 );
 
 g31500.on({
     click: function(){
-        $("#panel").html(Toe_31500.features[0].properties.Years_Ago +" Years Ago");
+        
+        $("#panel").html(Toe_31500.features[0].properties.Years_Ago +" Years Ago"+ info31500 + glacierInfo + selfPlug)
     }
 });
 
@@ -145,5 +146,5 @@ var overlayMaps = {
 
 var glacierLayers = L.control.layers(null,overlayMaps).addTo(map);
 
-var popup = L.popup();
+
 

@@ -1,8 +1,12 @@
 /*Stylesheet by Will P. Campbell,2021*/
+body {
+    background-color: #ECECEC;
+}
+
 #mapid {
-        position: relative;
+        position: fixed;
         height: 650px; 
-        width:40%;
+        width:60%;
         border:5px solid black;
         display: inline-block;
     
@@ -20,9 +24,9 @@ h1{
     background-color: lightblue;
     text-align: center;
     width: 25%;
+    height: auto;
     padding: 20px;
     display: inline-block;
-    vertical-align: top;
 
 }
 
